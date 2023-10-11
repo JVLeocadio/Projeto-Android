@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+@font-face {
+    font-family: 'robo' ;
+    src: url(fontes/idroid.otf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+
+  --color0:#33CCBF;
+  --color1:#39BF68;
+  --color2:#278B54;
+  --color3:#1B5936;
+
+
+  --fonte-padrao: 'Arial', 'Verdana', 'sans-serif';
+  --fonte-destaque: 'Shadows Into Light', 'cursive';
+  --fonte-robo: 'robo', 'cursive';
+
+}
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.466);
+    margin-bottom: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 0px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #c5ebd6;
+}
+
+header {
+    background-image: repeating-linear-gradient(#39BF68, #278B54, #1B5936);
+   min-height: 150px;
+   margin-top: -5px;
+    
+}
+nav{
+    margin-top: 30px;
+}
+nav > a {
+    color: white;
+    margin: 2px 2px;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 30px;
+} 
+
+nav > a:hover{
+    background-color: var(--color1);
+    color: var(--color3);
+}
+footer{
+    background-color: #1B5936;
+    text-align: center;
+    color: white;
+}
+#tituloc{
+    text-align: center;
+    margin-top: 10px;
+    
+}
+#paragrafoc{
+    text-align: center;
+    color: white;
+}
+section{
+    background-color: white;}
+    
+
+h1{
+    font-family: var(--fonte-robo);
+    color: white;
+    margin-bottom: 20px;
+    
+}
+h2 {
+    font-family: var(--fonte-robo);
+   color: var(--color2)
+}
+h3{
+    font-family: var(--fonte-destaque);
+}
+
+img{
+    width: 100%;
+}
+.pequena{
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+
+aside {
+    background-color: #278B54;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+aside > ul {
+
+    list-style-position: inside; 
+    column: 2;
+
+}
+
+div.video {
+    background-color: #33CCBF;
+    margin-bottom: 30 px; 
+    margin: 0 -20px 30px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 50%;
+}
+
+div.video > iframe {
+    position: absolute; 
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
